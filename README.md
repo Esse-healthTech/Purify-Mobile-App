@@ -57,6 +57,53 @@ please follow the few tutorial for clean Architecture :
 ----------------------------------------------------------------------------------------------
 
 
+basic structure of architecture 
+----------------------------------------
+
+lib/
+├── core/
+│   ├── themes/
+│   │   ├── theme_controller.dart
+│   │   ├── theme_data.dart
+│   ├── localization/
+│   │   ├── app_localizations.dart
+│   │   ├── localization_controller.dart
+├── data/
+│   ├── repositories/
+│   │   ├── auth_repository_impl.dart
+│   ├── sources/
+│   │   ├── remote/
+│   │   │   ├── firebase_auth_source.dart
+│   ├── models/
+│       ├── user.dart
+├── domain/
+│   ├── repositories/
+│   │   ├── auth_repository.dart
+│   ├── usecases/
+│   │   ├── send_otp_usecase.dart
+│   │   ├── verify_otp_usecase.dart
+├── presentation/
+│   ├── blocs/
+│   │   ├── auth_bloc/
+│   │   │   ├── auth_bloc.dart
+│   │   │   ├── auth_event.dart
+│   │   │   ├── auth_state.dart
+│   │   ├── theme_bloc/
+│   │   │   ├── theme_bloc.dart
+│   │   │   ├── theme_event.dart
+│   │   │   ├── theme_state.dart
+│   │   ├── localization_bloc/
+│   │   │   ├── localization_bloc.dart
+│   │   │   ├── localization_event.dart
+│   │   │   ├── localization_state.dart
+│   ├── screens/
+│       ├── login_screen.dart
+│       ├── home_screen.dart
+├── main.dart
+
+----------------------------------------------
+
+
 
 
 
